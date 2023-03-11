@@ -52,9 +52,8 @@ with st.expander("Analytics engineering example project"):
                 - AWS glue
                 - Google Cloud Functions
                 - BigQuery Scheduled Queries
-                
-                
                 '''
+    st.write("")
     st.markdown(text_pe)
     st.write(links_text)
     text_live_app = "*Below are links to the live version of the app.\
