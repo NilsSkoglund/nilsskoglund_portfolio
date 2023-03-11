@@ -59,7 +59,6 @@ with st.expander("Analytics engineering example project"):
                 '''
     st.markdown(text_pe)
     st.write("")
-    st.write(links_text)
     text_live_app = "Due to a NDA, I'm limited in what I can showcase\
         for this project. Below is a link to a private github repo\
         where I can do a live demo of some of the relevant material"
