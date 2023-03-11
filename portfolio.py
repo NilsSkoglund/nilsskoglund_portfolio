@@ -46,7 +46,8 @@ with st.expander("Analytics engineering example project"):
                 - API data (~5k rows, ~20 cols)
                 - ddb data (~100k rows nested data, flattened ~50 cols)
                 - GA data (~5k rows nested data, flattened ~30 cols)
-                \n
+                
+                
                 The data is moved using SQL and Python in the context of
                 - AWS glue
                 - Google Cloud Functions
