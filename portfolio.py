@@ -39,17 +39,19 @@ with st.expander("Analytics engineering example project"):
     with cent_co:
         st.image(image
                 , caption='Overview of tools used in the project')
-    text_pe = """In this project I built a small data warehouse in BigQuery\
-          that is used for an analytics dashboard in Looker.\
-            The data warehouse includes daily batches of\
+    text_pe = '''
+                In this project I built a small data warehouse in BigQuery\
+                that is used for an analytics dashboard in Looker.\
+                The data warehouse includes daily batches of\
                 - API data (~5k rows, ~20 cols)\
                 - ddb data (~100k rows nested data, flattened ~50 cols)\
                 - GA data (~5k rows nested data, flattened ~30 cols)\
                 \
                 The data is moved using SQL and Python in the context of \n\
-                    - AWS glue\
-                    - Google Cloud Functions\
-                    - BigQuery Scheduled Queries"""
+                - AWS glue\
+                - Google Cloud Functions\
+                - BigQuery Scheduled Queries
+                '''
     st.markdown(text_pe)
     st.write(links_text)
     text_live_app = "*Below are links to the live version of the app.\
