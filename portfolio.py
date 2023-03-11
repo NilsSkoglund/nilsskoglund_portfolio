@@ -42,15 +42,16 @@ with st.expander("Analytics engineering example project"):
     text_pe = '''
                 In this project I built a small data warehouse in BigQuery\
                 that is used for an analytics dashboard in Looker.\
-                The data warehouse includes daily batches of\
-                - API data (~5k rows, ~20 cols)\
-                - ddb data (~100k rows nested data, flattened ~50 cols)\
-                - GA data (~5k rows nested data, flattened ~30 cols)\
-                \
+                The data warehouse includes daily batches of
+                - API data (~5k rows, ~20 cols)
+                - ddb data (~100k rows nested data, flattened ~50 cols)
+                - GA data (~5k rows nested data, flattened ~30 cols)
+                
                 The data is moved using SQL and Python in the context of
                 - AWS glue
                 - Google Cloud Functions
                 - BigQuery Scheduled Queries
+                
                 '''
     st.markdown(text_pe)
     st.write(links_text)
