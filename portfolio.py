@@ -71,6 +71,7 @@ with st.expander("Analytics engineering example project"):
         - {url_github}
         '''
     )
+    st.write("")
 
 with st.expander("Pulmonary Embolism app"):
     st.subheader("Pulmonary Embolism app")
