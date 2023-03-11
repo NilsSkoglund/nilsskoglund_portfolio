@@ -41,7 +41,7 @@ with st.expander("Analytics engineering example project"):
                 , caption='Overview of tools used in the project')
     text_pe = '''
                 In this project I built a small data warehouse in BigQuery\
-                that is used for an analytics dashboard in Looker.\
+                for a digital marketing agency.\
                 The data warehouse includes daily batches of
                 - API data (~5k rows, ~20 cols)
                 - ddb data (~100k rows nested data, flattened ~50 cols)
@@ -52,6 +52,9 @@ with st.expander("Analytics engineering example project"):
                 - AWS glue
                 - Google Cloud Functions
                 - BigQuery Scheduled Queries
+
+                The data is used for analytics dashboards in Looker\
+                , some of which I helped set up.
                 '''
     st.markdown(text_pe)
     st.write("")
