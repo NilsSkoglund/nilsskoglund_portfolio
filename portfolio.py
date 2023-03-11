@@ -53,7 +53,7 @@ with st.expander("Analytics engineering example project"):
                 - Google Cloud Functions
                 - BigQuery Scheduled Queries
                 
-                \\
+                
                 '''
     st.markdown(text_pe)
     st.write(links_text)
