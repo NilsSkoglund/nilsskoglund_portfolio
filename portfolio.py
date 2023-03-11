@@ -53,40 +53,25 @@ with st.expander("Analytics engineering example project"):
                 - Google Cloud Functions
                 - BigQuery Scheduled Queries
 
+                \\
                 The data is used for analytics dashboards in Looker\
                 , some of which I helped set up.
                 '''
     st.markdown(text_pe)
     st.write("")
     st.write(links_text)
-    text_live_app = "*Below are links to the live version of the app.\
-        The live version implements more questionnaires but lacks\
-         user authentication and database interactions.*"
+    text_live_app = "Due to a NDA, I'm limited in what I can showcase\
+        for this project. Below is a link to a private github repo\
+        where I can do a live demo of some of the relevant material"
     st.write(text_live_app)
-    live_url_app = "[App](https://metis-live.streamlit.app/)"
-    url = "https://github.com/NilsSkoglund/lungemboli_multipage_master"
-    live_url_github=f"[Github]({url})"
+    url_pt1 = "https://github.com/NilsSkoglund/"
+    url_pt2 = "Analytics-engineering-portfolio-example"
+    url_github=f"[Github]({url_pt1+url_pt2})"
     st.markdown(
         f'''
-        - {live_url_app}
-        - {live_url_github}
+        - {url_github}
         '''
     )
-    st.write("")
-    text_dev_app = "*Below are links to the development version of the app\
-        which implements less questionnaires but has user authentication\
-        and database interactions.*"
-    st.write(text_dev_app)
-    dev_url_app = "[App](https://metis-dev.streamlit.app/)"
-    url = "https://github.com/NilsSkoglund/metis_development"
-    dev_url_github=f"[Github]({url})"
-    st.markdown(
-        f'''
-        - {dev_url_app}
-        - {dev_url_github}
-        '''
-    )
-    st.write("")
 
 with st.expander("Pulmonary Embolism app"):
     st.subheader("Pulmonary Embolism app")
