@@ -32,6 +32,55 @@ st.markdown(subheader_alignment, unsafe_allow_html=True)
 # to display
 st.header("Nils Skoglund Portfolio Projects")
 
+with st.expander("Analytics engineering example project"):
+    st.subheader("Analytics engineering example project")
+    left_co, cent_co,last_co = st.columns([1,6,1])
+    image = Image.open('ae.png')
+    with cent_co:
+        st.image(image
+                , caption='Overview of tools used in the project')
+    text_pe = "In this project I built a small data warehouse in BigQuery\
+          that is used for an analytics dashboard in Looker.\
+            The data warehouse includes daily batches of\
+                - API data (~5k rows, ~20 cols)\
+                - ddb data (~100k rows nested data, flattened ~50 cols)\
+                - GA data (~5k rows nested data, flattened ~30 cols)\
+                \
+                The data is moved using SQL and Python in the context of\
+                    - AWS glue\
+                    - Google Cloud Functions\
+                    - BigQuery Scheduled Queries"
+    st.write(text_pe)
+    st.write(links_text)
+    text_live_app = "*Below are links to the live version of the app.\
+        The live version implements more questionnaires but lacks\
+         user authentication and database interactions.*"
+    st.write(text_live_app)
+    live_url_app = "[App](https://metis-live.streamlit.app/)"
+    url = "https://github.com/NilsSkoglund/lungemboli_multipage_master"
+    live_url_github=f"[Github]({url})"
+    st.markdown(
+        f'''
+        - {live_url_app}
+        - {live_url_github}
+        '''
+    )
+    st.write("")
+    text_dev_app = "*Below are links to the development version of the app\
+        which implements less questionnaires but has user authentication\
+        and database interactions.*"
+    st.write(text_dev_app)
+    dev_url_app = "[App](https://metis-dev.streamlit.app/)"
+    url = "https://github.com/NilsSkoglund/metis_development"
+    dev_url_github=f"[Github]({url})"
+    st.markdown(
+        f'''
+        - {dev_url_app}
+        - {dev_url_github}
+        '''
+    )
+    st.write("")
+
 with st.expander("Pulmonary Embolism app"):
     st.subheader("Pulmonary Embolism app")
     left_co, cent_co,last_co = st.columns([1,6,1])
