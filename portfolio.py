@@ -147,13 +147,14 @@ with st.expander("Data analytics/science workshop"):
     st.image(f"{image_url}"
              , caption="Picture from one of the workshops")
     olink = "[OLINK](https://olink.com/)"
+    umap = "[UMAP](https://umap-learn.readthedocs.io/en/latest/)"
     text_workshop = f"This workshop was aimed at coding beginners\
          with domain expertise in medicine.\
          In the codealong we started with basic Python code \
-        and moved on to conducting data manipulation, visualization\
+        and moved on to data manipulation, visualization\
          and statistical analysis. As the grande finale of the workshop we\
-         applied unsupervised ML to cluster Covid\
-         patients based on protemoics data ( from {olink} ) "
+         applied unsupervised ML ({umap}) to cluster Covid\
+         patients based on protemoics data (from {olink}) "
     
     st.write(text_workshop)
     st.write(links_text)
