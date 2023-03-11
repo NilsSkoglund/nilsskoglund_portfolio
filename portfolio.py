@@ -47,9 +47,9 @@ with st.expander("Analytics engineering example project"):
                 - ddb data (~100k rows nested data, flattened ~50 cols)\
                 - GA data (~5k rows nested data, flattened ~30 cols)\
                 \
-                The data is moved using SQL and Python in the context of \n\
-                - AWS glue\
-                - Google Cloud Functions\
+                The data is moved using SQL and Python in the context of
+                - AWS glue
+                - Google Cloud Functions
                 - BigQuery Scheduled Queries
                 '''
     st.markdown(text_pe)
