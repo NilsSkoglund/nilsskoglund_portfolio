@@ -47,6 +47,7 @@ with st.expander("Analytics engineering example project"):
                 - GA data (~5k rows nested data, flattened ~30 cols)\
                 \
                 The data is moved using SQL and Python in the context of\
+                \
                     - AWS glue\
                     - Google Cloud Functions\
                     - BigQuery Scheduled Queries"""
