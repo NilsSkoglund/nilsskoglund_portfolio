@@ -52,8 +52,8 @@ with st.expander("Analytics engineering example project"):
                 - AWS glue
                 - Google Cloud Functions
                 - BigQuery Scheduled Queries
-
                 
+                \\
                 '''
     st.markdown(text_pe)
     st.write(links_text)
