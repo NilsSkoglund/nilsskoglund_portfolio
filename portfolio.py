@@ -199,20 +199,14 @@ with st.expander("SQL Intro course"):
     )
     st.write("")
 
-st.header("Nils Skoglund CV")
+st.write("---")
+
+col1, col2, col3 = st.columns(3)
 
 with open("Nils Skoglund CV.pdf", "rb") as file:
     cv = file.read()
 
-    
-def show_pdf(file_path):
-    with open(file_path,"rb") as f:
-        base64_pdf = base64.b64encode(f.read()).decode('utf-8')
-    pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="800" height="800" type="application/pdf"></iframe>'
-    st.markdown(pdf_display, unsafe_allow_html=True)
-
-show_pdf('Nils Skoglund CV.pdf')
-
-st.download_button(label="Download CV",
+with col2:
+    st.download_button(label="Download CV",
                     data=cv,
                     file_name="Nils Skoglund CV.pdf")
