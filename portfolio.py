@@ -197,3 +197,9 @@ with st.expander("SQL Intro course"):
         '''
     )
     st.write("")
+
+st.header("Nils Skoglund CV")
+
+st.download_button("Download CV"
+                   , data=file
+                   , file_name="Nils Skoglund CV.pdf")
