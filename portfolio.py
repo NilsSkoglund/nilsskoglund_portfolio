@@ -200,5 +200,9 @@ with st.expander("SQL Intro course"):
 
 st.header("Nils Skoglund CV")
 
-st.download_button("Download CV"
-                   , file_name="Nils Skoglund CV.pdf")
+with open("Nils Skoglund CV.pdf", "rb") as file:
+    cv = file.read()
+
+st.download_button(label="Download CV",
+                    data=cv,
+                    file_name="Nils Skoglund CV.pdf")
