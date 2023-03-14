@@ -201,12 +201,12 @@ with st.expander("SQL Intro course"):
 
 st.write("---")
 
-col1, col2, col3 = st.columns(3)
+col1, col2, col3, col4, col5 = st.columns(5)
 
 with open("Nils Skoglund CV.pdf", "rb") as file:
     cv = file.read()
 
-with col2:
+with col3:
     st.download_button(label="Download CV",
                     data=cv,
                     file_name="Nils Skoglund CV.pdf")
