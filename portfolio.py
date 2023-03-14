@@ -31,6 +31,7 @@ st.markdown(subheader_alignment, unsafe_allow_html=True)
 
 # to display
 st.header("Nils Skoglund Portfolio Projects")
+st.write("")
 
 with st.expander("Analytics engineering example project"):
     st.subheader("Analytics engineering example project")
@@ -205,15 +206,10 @@ center_button = '''
 .row-widget.stDownloadButton {text-align: center;}
 </style>
 '''
-
 st.markdown(center_button, unsafe_allow_html=True)
-
-#col1, col2, col3, col4, col5 = st.columns(5)
 
 with open("Nils Skoglund CV.pdf", "rb") as file:
     cv = file.read()
-
-#with col3:
 st.download_button(label="Download CV",
                     data=cv,
                     file_name="Nils Skoglund CV.pdf")
