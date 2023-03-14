@@ -200,8 +200,13 @@ with st.expander("SQL Intro course"):
 
 st.write("---")
 
-style = "<style>.row-widget.stButton {text-align: center;}</style>"
-st.markdown(style, unsafe_allow_html=True)
+center_button = '''
+<style>
+button{text-align: center;}
+</style>
+'''
+
+st.markdown(center_button, unsafe_allow_html=True)
 
 #col1, col2, col3, col4, col5 = st.columns(5)
 
