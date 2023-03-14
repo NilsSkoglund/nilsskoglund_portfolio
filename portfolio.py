@@ -202,7 +202,7 @@ st.write("---")
 
 center_button = '''
 <style>
-row-widget.stDownloadButton{text-align: center;}
+.row-widget.stDownloadButton {text-align: center;}
 </style>
 '''
 
