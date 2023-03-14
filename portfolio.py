@@ -1,6 +1,5 @@
 import streamlit as st
 from PIL import Image
-import base64
 
 # vars
 links_text = "**Find links below**"
@@ -201,12 +200,15 @@ with st.expander("SQL Intro course"):
 
 st.write("---")
 
-col1, col2, col3, col4, col5 = st.columns(5)
+style = "<style>.row-widget.stButton {text-align: center;}</style>"
+st.markdown(style, unsafe_allow_html=True)
+
+#col1, col2, col3, col4, col5 = st.columns(5)
 
 with open("Nils Skoglund CV.pdf", "rb") as file:
     cv = file.read()
 
-with col3:
-    st.download_button(label="Download CV",
+#with col3:
+st.download_button(label="Download CV",
                     data=cv,
                     file_name="Nils Skoglund CV.pdf")
