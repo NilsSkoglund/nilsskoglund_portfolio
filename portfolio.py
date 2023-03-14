@@ -33,7 +33,7 @@ st.markdown(subheader_alignment, unsafe_allow_html=True)
 st.header("Nils Skoglund Portfolio Projects")
 st.write("")
 
-with st.expander("Analytics engineering example project"):
+with st.expander("Analytics engineering example project (work)"):
     st.subheader("Analytics engineering example project")
     left_co, cent_co,last_co = st.columns([1,6,1])
     image = Image.open('ae.png')
@@ -74,7 +74,7 @@ with st.expander("Analytics engineering example project"):
     )
     st.write("")
 
-with st.expander("Pulmonary Embolism app"):
+with st.expander("Pulmonary Embolism app (spare time)"):
     st.subheader("Pulmonary Embolism app")
     left_co, cent_co,last_co = st.columns([1,6,1])
     image = Image.open('pe.png')
@@ -118,7 +118,7 @@ with st.expander("Pulmonary Embolism app"):
     )
     st.write("")
 
-with st.expander("Workout Schedule app"):
+with st.expander("Workout Schedule app (spare time)"):
     st.subheader("Workout Schedule app")
     # with cent_co:
     image = Image.open('workout.png')
@@ -140,7 +140,7 @@ with st.expander("Workout Schedule app"):
     )
     st.write("")
 
-with st.expander("Data analytics/science workshop"):
+with st.expander("Data analytics/science workshop (work)"):
     st.subheader("Data analytics/science workshop")
     image_url = ("https://github.com/NilsSkoglund/"
                  "ki_workshop/blob/main/"
@@ -174,7 +174,7 @@ with st.expander("SQL Intro course"):
     st.subheader("SQL Intro course")
     image = Image.open('sql.png')
     st.image(image
-             , caption='Overview of the 4 day schedule')
+             , caption='Overview of the 4 day schedule (work)')
     text_sql = f"During my time at the coding bootcamp company Nod,\
           I developed an introductory course for SQL. I was also responsible\
              for selling and delivering the course. The project was\
