@@ -170,11 +170,11 @@ with st.expander("Data analytics/science workshop (work)"):
 
 
 
-with st.expander("SQL Intro course"):
+with st.expander("SQL Intro course (work)"):
     st.subheader("SQL Intro course")
     image = Image.open('sql.png')
     st.image(image
-             , caption='Overview of the 4 day schedule (work)')
+             , caption='Overview of the 4 day schedule')
     text_sql = f"During my time at the coding bootcamp company Nod,\
           I developed an introductory course for SQL. I was also responsible\
              for selling and delivering the course. The project was\
