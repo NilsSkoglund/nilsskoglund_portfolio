@@ -1,5 +1,6 @@
 import streamlit as st
 from PIL import Image
+import base64
 
 # vars
 links_text = "**Find links below**"
