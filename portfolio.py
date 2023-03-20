@@ -215,6 +215,13 @@ st.download_button(label="Download CV",
                         data=cv,
                         file_name=file_name_cv)
 
+center_button_tooltip = '''
+<style>
+.stTooltipIcon {text-align: center;}
+</style>
+'''
+st.markdown(center_button_tooltip, unsafe_allow_html=True)
+
 file_name_records = "transcript of records UU.pdf"
 with open(file_name_records, "rb") as file:
     records = file.read()
