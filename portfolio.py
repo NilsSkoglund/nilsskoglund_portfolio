@@ -208,8 +208,12 @@ center_button = '''
 '''
 st.markdown(center_button, unsafe_allow_html=True)
 
+col1, col2 = st.columns(2)
+
 with open("Nils Skoglund CV.pdf", "rb") as file:
     cv = file.read()
-st.download_button(label="Download CV",
-                    data=cv,
-                    file_name="Nils Skoglund CV.pdf")
+
+with col1:
+    st.download_button(label="Download CV",
+                        data=cv,
+                        file_name="Nils Skoglund CV.pdf")
