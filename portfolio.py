@@ -224,5 +224,5 @@ with open(file_name_records, "rb") as file:
 with col2:
     st.download_button(label="Download ToC",
                         data=records,
-                        help="ToC = Transcript of Records"
+                        help="ToC = Transcript of Records",
                         file_name=file_name_records)
