@@ -229,6 +229,3 @@ st.markdown(
     """,
     unsafe_allow_html=True,
 )
-
-nod_cert_link = f"[Nod Certificate](https://www.credential.net/49eb1a90-490c-4ef8-85ff-45c2092dd6cc#gs.tc23rg)"
-st.markdown(nod_cert_link)
