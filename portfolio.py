@@ -171,7 +171,7 @@ with st.expander("Data analytics/science workshop (work)"):
 
 with st.expander("SQL Intro course (work)"):
     st.subheader("SQL Intro course")
-    image = Image.open('sql.png')
+    image = Image.open('nod_sql.png')
     st.image(image
              , caption='Overview of the 4 day schedule')
     text_sql = f"During my time at the coding bootcamp company Nod,\
