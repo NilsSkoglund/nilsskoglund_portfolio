@@ -44,8 +44,8 @@ with st.expander("Analytics engineering example project (work)"):
                 In this project I built a small data warehouse in BigQuery\
                 for a digital marketing agency.\
                 The data warehouse includes daily batches of
-                - API data (~5k rows, ~20 cols)
                 - ddb data (~100k rows nested data, flattened ~50 cols)
+                - API data (~5k rows, ~20 cols)
                 - GA data (~5k rows nested data, flattened ~30 cols)
 
                 \\
