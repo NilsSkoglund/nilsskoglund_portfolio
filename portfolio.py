@@ -222,12 +222,16 @@ st.download_button(label="Download Transcript of Records",
                         data=records,
                         file_name=file_name_records)
 
-center_link = '''
-<style>
-a {text-align: center;}
-</style>
-'''
-st.markdown(center_link, unsafe_allow_html=True)
+
+st.markdown(
+    """
+    <a style='display: block; text-align: center;' 
+    href=
+    "https://www.credential.net/49eb1a90-490c-4ef8-85ff-45c2092dd6cc#gs.tc23rg"
+    >Nod Certificate</a>
+    """,
+    unsafe_allow_html=True,
+)
 
 nod_cert_link = f"[Nod Certificate](https://www.credential.net/49eb1a90-490c-4ef8-85ff-45c2092dd6cc#gs.tc23rg)"
 st.markdown(nod_cert_link)
