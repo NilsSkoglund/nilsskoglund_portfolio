@@ -154,8 +154,7 @@ with st.expander("Data analytics/science workshop (work)"):
          In the codealong we started with basic Python code \
         and moved on to data manipulation, visualization\
          and statistical analysis. As the grande finale of the workshop we\
-         applied unsupervised ML ({umap}) to cluster Covid\
-         patients based on protemoics data (from {olink}) "
+         applied unsupervised ML ({umap}) on protemoics data (from {olink})."
     
     st.write(text_workshop)
     st.write(links_text)
