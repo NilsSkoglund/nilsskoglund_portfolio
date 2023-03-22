@@ -221,3 +221,6 @@ with open(file_name_records, "rb") as file:
 st.download_button(label="Download Transcript of Records",
                         data=records,
                         file_name=file_name_records)
+
+nod_cert_link = f"[Nod Certificate](https://www.credential.net/49eb1a90-490c-4ef8-85ff-45c2092dd6cc#gs.tc23rg)"
+st.markdown(nod_cert_link)
