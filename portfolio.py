@@ -225,7 +225,7 @@ st.download_button(label="Download Transcript of Records",
 
 st.markdown(
     """
-    <a style='display: block; text-align: center;' href="https://www.credential.net/49eb1a90-490c-4ef8-85ff-45c2092dd6cc#gs.tc23rg">Nod Certificate</a>
+    <a style='display: block; text-align: center; color: white;' href="https://www.credential.net/49eb1a90-490c-4ef8-85ff-45c2092dd6cc#gs.tc23rg">Nod Certificate</a>
     """,
     unsafe_allow_html=True,
 )
