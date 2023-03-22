@@ -80,7 +80,7 @@ with st.expander("Pulmonary Embolism app (spare time)"):
     image = Image.open('pe.png')
     with cent_co:
         st.image(image
-                , caption='Patients are stratified in risk groups')
+                , caption='Patients are stratified into risk groups')
     text_pe = "A web application written in streamlit\
          meant to be used as a support tool for\
         diagnosing Pulmonary Embolism (PE). The application guides\
